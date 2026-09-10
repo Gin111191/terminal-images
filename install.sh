@@ -29,4 +29,4 @@ echo "+ $*"
 echo
 echo "Installed. Now asking this terminal what it can draw:"
 echo
-exec "$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)/imgprobe.sh"
+"$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)/imgprobe.sh" || true
